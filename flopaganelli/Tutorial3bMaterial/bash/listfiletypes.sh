@@ -15,7 +15,7 @@ fi
 
 echo "$MESSAGE"
 
-for somefile in ${TARGETDIR}/*; do
+for somefile in ${/tmp}/*; do
     echo "This is the file $somefile, with type:";
     # the file command tells you the type of a file.
     file $somefile

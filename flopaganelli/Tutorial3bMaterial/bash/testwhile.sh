@@ -3,8 +3,8 @@
 # run with: ./testwhile.sh
 #
 # Continue asking numbers until the user writes “end”
-while [ "$var1" != "end" ]; do     # while test "$var1" != "end"
-  echo "Input variable value (end to exit) "
+while [ "$var1" != "bye" ]; do     # while test "$var1" != "end"
+  echo "Input variable value (bye to exit) "
   read var1                   # Not 'read $var1' (why?).
   echo "variable value = $var1"   # Need quotes because of "#" . . .
   # If input is 'end', echoes it here.
