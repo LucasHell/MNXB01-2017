@@ -3,7 +3,7 @@
 #######################################################################
 #
 # MNXB01-2017-HW3b
-# File: pokemoninfo.sh file
+# File: pokemoninfo.sh
 # Author: Lucas Hellström nat14lhe@student.lu.se
 #		  Lund University
 ########################################################################
@@ -31,7 +31,7 @@ errormsg() {
 # hint: use the if construct and the proper conditions to verify parameters
 # and directory existence.
 
-#Check if parameter DBDIR exists and is not empty, if it does not exists are is empty the program will exit
+#Check if parameter DBDIR exists and is not empty, if it does not exists or is empty the program will exit
 if [ ! $DBDIR ]; then
 	echo "Parameter does not exist or is empty!" | tee "output.log" -a
 	exit 0;
